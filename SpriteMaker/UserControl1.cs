@@ -40,8 +40,7 @@ namespace SpriteMaker
         {
             if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
-                System.IO.StreamReader sr = new
-                System.IO.StreamReader(openFileDialog1.FileName);
+                System.IO.StreamReader sr = new System.IO.StreamReader(openFileDialog1.FileName);
                 MessageBox.Show(sr.ReadToEnd());
                 sr.Close();
             }
